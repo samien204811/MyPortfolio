@@ -165,68 +165,77 @@ window.addEventListener("scroll", () => {
 
 // Loader
 
-const canvas = document.getElementById("sky");
-const ctx = canvas.getContext("2d");
+document.addEventListener("DOMContentLoaded", () => {
+    const canvas = document.getElementById("quantum-sky");
+    const ctx = canvas.getContext("2d");
+    const statusText = document.getElementById("status-text");
+    const busFill = document.getElementById("loader-bus-fill");
 
-let w, h;
+    let w = (canvas.width = window.innerWidth);
+    let h = (canvas.height = window.innerHeight);
 
-function resize() {
-    w = canvas.width = window.innerWidth;
-    h = canvas.height = window.innerHeight;
-}
-window.addEventListener("resize", resize);
-resize();
-
-/* navy data stars */
-const stars = Array.from({ length: 160 }, () => ({
-    x: Math.random() * w,
-    y: Math.random() * h,
-    r: Math.random() * 1.6 + 0.3,
-    v: Math.random() * 0.25 + 0.05
-}));
-
-function draw() {
-    ctx.clearRect(0, 0, w, h);
-
-    for (let s of stars) {
-        s.y += s.v;
-
-        if (s.y > h) s.y = 0;
-
-        ctx.beginPath();
-        ctx.fillStyle = "rgba(10, 30, 70, 0.65)";
-        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fill();
+    const particles = [];
+    class Particle {
+        constructor() {
+            this.reset();
+        }
+        reset() {
+            this.x = Math.random() * w;
+            this.y = Math.random() * h;
+            this.size = Math.random() * 2 + 1;
+            this.speedX = (Math.random() - 0.5) * 2;
+            this.speedY = (Math.random() - 0.5) * 2;
+            this.opacity = Math.random() * 0.5 + 0.1;
+        }
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            if (this.x < 0 || this.x > w || this.y < 0 || this.y > h) this.reset();
+        }
+        draw() {
+            ctx.fillStyle = `rgba(37, 99, 235, ${this.opacity})`;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+        }
     }
 
-    requestAnimationFrame(draw);
-}
+    for (let i = 0; i < 200; i++) particles.push(new Particle());
 
-draw();
-
-/* status messages */
-const status = document.getElementById("status");
-
-const messages = [
-    "Preparing system...",
-    "Loading research modules...",
-    "Synchronizing data layers...",
-    "Rendering interface...",
-];
-
-let i = 0;
-
-setInterval(() => {
-    if (i < messages.length) {
-        status.textContent = messages[i];
-        i++;
+    function animate() {
+        ctx.clearRect(0, 0, w, h);
+        particles.forEach(p => { p.update(); p.draw(); });
+        requestAnimationFrame(animate);
     }
-}, 500);
+    animate();
 
-/* exit */
-setTimeout(() => {
-    document.getElementById("loader").classList.add("hide");
-}, 3500);
+    // Simulation of system load stages
+    const stages = [
+        { text: "CALIBRATING_MEMORY_BUS...", progress: 20 },
+        { text: "INITIALIZING_KERNEL_THREADS...", progress: 45 },
+        { text: "ASSEMBLING_RENDER_PIPELINE...", progress: 70 },
+        { text: "BOOTING_SYSTEM_INTERFACE...", progress: 100 }
+    ];
+
+    let currentStage = 0;
+    const interval = setInterval(() => {
+        if (currentStage >= stages.length) {
+            clearInterval(interval);
+            setTimeout(hideLoader, 500);
+            return;
+        }
+        const stage = stages[currentStage];
+        statusText.textContent = stage.text;
+        busFill.style.width = `${stage.progress}%`;
+        currentStage++;
+    }, 1200);
+
+    function hideLoader() {
+        const loader = document.getElementById("loader");
+        loader.style.opacity = 0;
+        setTimeout(() => loader.style.display = 'none', 1000);
+    }
+});
 
 // Dynamic Bubble Generator
 function initBubbles() {
