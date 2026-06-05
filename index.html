@@ -27,36 +27,50 @@
     </div>
 
     <div class="fx-bg"></div>
+    <div class="bubbles-container"></div>
     <div class="grain"></div>
     <div class="cursor"></div>
 
-    <nav>
-        <div class="nav-logo">Samien <em>Shrestha</em></div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="kinetic-nav-dock">
+        <div class="nav-dock-container">
+
+            <div class="nav-logo-block">
+                <a href="#" class="logo-anchor">
+                    <span class="logo-sym">//</span> Samien <em class="serif-italic">Shrestha</em>
+                </a>
+            </div>
+
+            <div class="nav-links-track-wrapper">
+                <div class="nav-liquid-slider"></div>
+
+                <ul class="nav-dock-links">
+                    <li><a href="#about" class="dock-link active" data-nav-target="about">About</a></li>
+                    <li><a href="#skills" class="dock-link" data-nav-target="skills">Skills</a></li>
+                    <li><a href="#research" class="dock-link" data-nav-target="research">Research</a></li>
+                    <li><a href="#projects" class="dock-link" data-nav-target="projects">Projects</a></li>
+                    <li><a href="#experience" class="dock-link" data-nav-target="experience">Experience</a></li>
+                    <li><a href="#contact" class="dock-link" data-nav-target="contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
     </nav>
 
-    <section id="hero">
+    <section id="hero" class="hero-section">
+        <div class="ambient-orb orb-primary"></div>
+        <div class="ambient-orb orb-secondary"></div>
 
-        <div class="hero-watermark" id="wm">SS</div>
+        <div class="hero-watermark" data-speed="0.15" id="wm">SS</div>
 
-        <div class="hero-grid">
+        <div class="hero-grid container">
 
-            <!-- IDENTITY BLOCK -->
-            <div class="hero-main">
-
+            <div class="hero-main element-fade-up">
                 <div class="hero-eyebrow">
                     <div class="hero-line"></div>
                     <span>Computer Science • AI in Embedded Systems Research</span>
                 </div>
 
-                <h1 class="hero-name">Samien<br><em>Shrestha</em></h1>
+                <h1 class="hero-name">Samien<br><em class="text-gradient">Shrestha</em></h1>
 
                 <p class="hero-sub">
                     MSc researcher at RPTU Germany focusing on AI systems, embedded intelligence, and computational
@@ -65,450 +79,982 @@
                 </p>
 
                 <div class="cta-row">
-                    <a href="#contact" class="btn-solid">Get in touch →</a>
-                    <a href="#research" class="btn-outline">View research</a>
+                    <a href="#contact" class="btn-solid hover-lift">Get in touch <span class="arrow">→</span></a>
+                    <a href="#research" class="btn-outline hover-lift">View research</a>
                 </div>
-
             </div>
 
-            <!-- PROFILE IMAGE -->
-            <div class="hero-media">
-                <div class="photo-card">
+            <div class="hero-media element-fade-up delay-1">
+                <div class="photo-card tilt-element">
+                    <div class="card-glow"></div>
                     <img src="Profile Picture.jpeg" alt="Samien Shrestha">
                 </div>
             </div>
 
-            <!-- METRICS -->
-            <div class="hero-metrics">
-
-                <div class="stat-cell">
+            <div class="hero-metrics desktop-only element-fade-up delay-2">
+                <div class="stat-cell glass-panel tilt-element">
                     <div class="stat-n">Germany 🇩🇪</div>
                     <div class="stat-label">Research Base</div>
                     <div class="stat-detail">RPTU Kaiserslautern — Systems & AI Environment</div>
                 </div>
 
-                <div class="stat-cell">
+                <div class="stat-cell glass-panel tilt-element">
                     <div class="stat-n">2×</div>
                     <div class="stat-label">Granted Patents</div>
                     <div class="stat-detail">Smart Grid Optimization · Railway Safety Systems</div>
                 </div>
 
-                <div class="stat-cell">
+                <div class="stat-cell glass-panel tilt-element">
                     <div class="stat-n">9.79</div>
                     <div class="stat-label">Academic Performance</div>
                     <div class="stat-detail">Bachelor’s in Computer Science (Top-tier GPA)</div>
                 </div>
 
-                <div class="stat-cell">
+                <div class="stat-cell glass-panel tilt-element">
                     <div class="stat-n">1</div>
                     <div class="stat-label">Research Publication</div>
                     <div class="stat-detail">Applied Cryptography & Systems Design</div>
                 </div>
 
-                <div class="stat-cell">
+                <div class="stat-cell glass-panel tilt-element">
                     <div class="stat-n">6+</div>
                     <div class="stat-label">Engineering Builds</div>
                     <div class="stat-detail">AI · IoT · Embedded · Full-stack Systems</div>
                 </div>
-
             </div>
 
-        </div>
-
-    </section>
-
-    <section id="about">
-        <div class="sec-head">
-            <div class="sec-left">
-                <span class="sec-num">i.</span>
-                <h2 class="sec-title">About <em>me</em></h2>
-            </div>
-            <div class="sec-divider"></div>
-        </div>
-        <div class="about-2col">
-            <div class="about-prose reveal">
-                <p>
-                    I am a research-driven Computer Science graduate from Sharda University, where I completed my BSc.
-                    with a CGPA of 9.79 out of 10 and was awarded the Vice-Chancellor's Gold Medal — the institution's
-                    highest student honor.
-                </p>
-
-                <p>
-                    I am currently pursuing my MSc in Computer Science at RPTU Germany, while continuing work in AI
-                    systems, embedded engineering, and computational research. My focus lies in building intelligent
-                    systems that merge software, hardware, and real-world data.
-                </p>
-                <p>My work spans AI-enabled systems, microcontroller programming, IoT integration, anomaly detection,
-                    and intelligent automation. With two national patents and a published paper on a novel cryptographic
-                    hashing algorithm, I bring a strong inventive instinct to complex engineering problems.</p>
-                <p>I am currently preparing for graduate studies in Computer Science, with a focus on AI, embedded
-                    systems, and smart infrastructure.</p>
-                <div class="pills">
-                    <span class="pill">Artificial Intelligence</span>
-                    <span class="pill">IoT Systems</span>
-                    <span class="pill">Embedded Engineering</span>
-                    <span class="pill">Anomaly Detection</span>
-                    <span class="pill">Cloud Computing</span>
-                    <span class="pill">Cryptography</span>
-                    <span class="pill">Mobile Development</span>
-                    <span class="pill">Power Electronics</span>
-                </div>
-            </div>
-            <div class="about-aside reveal">
-                <div class="info-row">
-                    <div class="info-key">Location</div>
-                    <div class="info-val">Kaiserslautern, Germany | Kathmandu, Nepal</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-key">Email</div>
-                    <div class="info-val">samienshrestha@gmail.com</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-key">Education</div>
-                    <div class="info-val"><strong>BSc. Computer Science</strong><br>Sharda University, India</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-key">Languages</div>
-                    <div class="info-val">English (C1 · IELTS 8.0)<br>Nepali (Native)<br>German (A2–B1)</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-key">Distinction</div>
-                    <div class="info-val"><strong>Vice-Chancellor's Gold Medal</strong>, 2025</div>
-                </div>
-                <div class="info-row">
-                    <div class="info-key">GitHub</div>
-                    <div class="info-val">github.com/samien204811</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="sec-head">
-            <div class="sec-left">
-                <span class="sec-num">ii.</span>
-                <h2 class="sec-title">Technical <em>skills</em></h2>
-            </div>
-            <div class="sec-divider"></div>
-        </div>
-        <table class="skills-tbl reveal">
-            <tr>
-                <td><i class="ti ti-terminal-2" aria-hidden="true"></i>Programming</td>
-                <td>
-                    <div class="chips"><span class="chip">Python</span><span class="chip">C</span><span
-                            class="chip">C++</span><span class="chip">Java</span><span class="chip">Kotlin</span><span
-                            class="chip">PHP</span></div>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="ti ti-brain" aria-hidden="true"></i>AI &amp; ML</td>
-                <td>
-                    <div class="chips"><span class="chip">TensorFlow</span><span class="chip">TF Lite</span><span
-                            class="chip">scikit-learn</span><span class="chip">NLP</span><span class="chip">Anomaly
-                            Detection</span><span class="chip">Clustering</span></div>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="ti ti-cpu" aria-hidden="true"></i>Embedded &amp; IoT</td>
-                <td>
-                    <div class="chips"><span class="chip">Microcontrollers</span><span class="chip">Real-time
-                            IoT</span><span class="chip">Comm Protocols</span><span class="chip">Circuit
-                            Design</span><span class="chip">Prototyping</span><span class="chip">Power
-                            Electronics</span></div>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="ti ti-device-mobile" aria-hidden="true"></i>Mobile &amp; Web</td>
-                <td>
-                    <div class="chips"><span class="chip">Android</span><span class="chip">Java / Kotlin</span><span
-                            class="chip">Flutter</span><span class="chip">Flask</span><span class="chip">Django</span>
+            <div class="mobile-dashboard mobile-only glass-panel element-fade-up delay-2">
+                <div class="dashboard-header">Research Snapshot</div>
+                <div class="dashboard-grid">
+                    <div class="dashboard-stat">
+                        <span class="d-number">2</span>
+                        <span class="d-label">Patents</span>
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="ti ti-database" aria-hidden="true"></i>Databases &amp; Cloud</td>
-                <td>
-                    <div class="chips"><span class="chip">MySQL</span><span class="chip">Firebase</span><span
-                            class="chip">Microsoft Azure</span><span class="chip">AWS</span></div>
-                </td>
-            </tr>
-            <tr>
-                <td><i class="ti ti-lock" aria-hidden="true"></i>Security &amp; Crypto</td>
-                <td>
-                    <div class="chips"><span class="chip">Custom Hashing</span><span class="chip">Encryption</span><span
-                            class="chip">Password Security</span></div>
-                </td>
-            </tr>
-        </table>
-    </section>
+                    <div class="dashboard-stat">
+                        <span class="d-number">9.79</span>
+                        <span class="d-label">CGPA</span>
+                    </div>
+                    <div class="dashboard-stat">
+                        <span class="d-number">1</span>
+                        <span class="d-label">Publication</span>
+                    </div>
+                    <div class="dashboard-stat">
+                        <span class="d-number">6+</span>
+                        <span class="d-label">Projects</span>
+                    </div>
+                </div>
+                <div class="dashboard-footer">
+                    <span class="dash-location">🇩🇪 Germany</span>
+                    <span class="dash-university">RPTU Kaiserslautern</span>
+                </div>
+            </div>
 
-    <section id="research">
-        <div class="sec-head">
-            <div class="sec-left">
-                <span class="sec-num">iii.</span>
-                <h2 class="sec-title">Research &amp; <em>Patents</em></h2>
-            </div>
-            <div class="sec-divider"></div>
-        </div>
-        <div class="research-grid reveal">
-            <div class="rc">
-                <span class="rc-badge b-gold">&#9670; Vice-Chancellor's Gold Medal</span>
-                <div class="rc-year">2025</div>
-                <div class="rc-title">Academic Excellence Award</div>
-                <div class="rc-desc">Awarded by Sharda University for exceptional academic performance across the full
-                    bachelor's program — the institution's highest student honor.</div>
-            </div>
-            <div class="rc">
-                <span class="rc-badge b-green">&#9670; Published Paper</span>
-                <div class="rc-year">2024–25</div>
-                <div class="rc-title">Cosmic Hash Algorithm</div>
-                <div class="rc-desc">A conceptual paper proposing a novel data hashing algorithm leveraging celestial
-                    mechanics and star entropy models for enhanced cryptographic strength.</div>
-                <div class="rc-ref">IJSDR · Paper ID: IJSDR2504078</div>
-            </div>
-            <div class="rc">
-                <span class="rc-badge b-blue">&#9670; National Patent</span>
-                <div class="rc-year">2024–25</div>
-                <div class="rc-title">Smart Grid Load Management System</div>
-                <div class="rc-desc">An energy-efficient IoT-based smart grid with AI-driven consumption analytics,
-                    enabling real-time load balancing and intelligent energy optimization.</div>
-                <div class="rc-ref">Ref: 202511036740</div>
-            </div>
-            <div class="rc">
-                <span class="rc-badge b-blue">&#9670; National Patent</span>
-                <div class="rc-year">2024–25</div>
-                <div class="rc-title">Railway Track Safety Automation</div>
-                <div class="rc-desc">A real-time anomaly detection and emergency signaling system using embedded
-                    systems, designed to prevent track-related accidents through continuous automated monitoring.</div>
-                <div class="rc-ref">Ref: 202511013476</div>
-            </div>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="sec-head">
-            <div class="sec-left">
-                <span class="sec-num">iv.</span>
-                <h2 class="sec-title">Selected <em>projects</em></h2>
-            </div>
-            <div class="sec-divider"></div>
-        </div>
-        <div class="proj-list reveal">
-            <div class="proj-row">
-                <div class="proj-idx">01</div>
-                <div>
-                    <div class="proj-name">WanderGo</div>
-                    <div class="proj-desc">Travel map application with dark theme and progressive place discovery
-                        through user engagement. Built for intuitive exploration and trip planning.</div>
-                </div>
-                <div><span class="badge b-award"><span class="dot"></span>Award Winning</span></div>
-            </div>
-            <div class="proj-row">
-                <div class="proj-idx">02</div>
-                <div>
-                    <div class="proj-name">Nisara</div>
-                    <div class="proj-desc">Smart Healthcare Management System — combining research paper and functional
-                        prototype for intelligent patient and clinical resource management.</div>
-                </div>
-                <div><span class="badge b-live"><span class="dot"></span>Published</span></div>
-            </div>
-            <div class="proj-row">
-                <div class="proj-idx">03</div>
-                <div>
-                    <div class="proj-name">Cortex</div>
-                    <div class="proj-desc">Livestock Monitoring Collar Ecosystem — IoT-based health, location, and
-                        behavioral tracking system for agricultural livestock.</div>
-                </div>
-                <div><span class="badge b-award"><span class="dot"></span>Award Winning</span></div>
-            </div>
-            <div class="proj-row">
-                <div class="proj-idx">04</div>
-                <div>
-                    <div class="proj-name">Miners Aid</div>
-                    <div class="proj-desc">Predictive Safety System for Underground Operations — ML-based hazard
-                        detection and real-time worker alerts for mining environments.</div>
-                </div>
-                <div><span class="badge b-live"><span class="dot"></span>Completed</span></div>
-            </div>
-            <div class="proj-row">
-                <div class="proj-idx">05</div>
-                <div>
-                    <div class="proj-name">Challo</div>
-                    <div class="proj-desc">Ride booking system for students and employees — a campus and corporate
-                        mobility platform with real-time routing and scheduling.</div>
-                </div>
-                <div><span class="badge b-dev"><span class="dot"></span>In Development</span></div>
-            </div>
-            <div class="proj-row">
-                <div class="proj-idx">06</div>
-                <div>
-                    <div class="proj-name">AMPCES V.2</div>
-                    <div class="proj-desc">Automated Machine-learned Endangered Plant Conservation Ecosystem — computer
-                        vision and ML for species identification and biodiversity monitoring.</div>
-                </div>
-                <div><span class="badge b-rd"><span class="dot"></span>R&amp;D Phase</span></div>
-            </div>
-        </div>
-    </section>
+    <section id="about" class="about-console-section">
+        <canvas id="console-matrix-canvas"></canvas>
+        <div class="console-plasma-lens"></div>
 
-    <section id="experience">
-        <div class="sec-head">
-            <div class="sec-left">
-                <span class="sec-num">v.</span>
-                <h2 class="sec-title">Work <em>experience</em></h2>
-            </div>
-            <div class="sec-divider"></div>
-        </div>
-        <div class="exp-layout reveal">
-            <div class="exp-left">
-                <span class="exp-tag">Internship</span>
-                <div class="exp-co">Kanpou Nepal Pvt. Ltd.</div>
-                <div class="exp-loc">Kathmandu, Nepal</div>
-                <div class="exp-period">May – Aug 2025</div>
-            </div>
-            <div class="exp-right">
-                <div class="exp-role-title">Digital Inventory Manager<br>&amp; Web Developer</div>
-                <ul class="exp-blist">
-                    <li>Designed and deployed a web-based inventory management system tailored to Kanpou Nepal's
-                        operational workflows and business requirements.</li>
-                    <li>Automated digital inventory tracking using a custom dashboard, improving product traceability
-                        and reducing manual errors by over 40%.</li>
-                    <li>Collaborated with cross-functional teams to integrate real-time stock updates and client-side
-                        order handling into existing systems.</li>
-                    <li>Implemented data structuring and optimized front-end interfaces for efficient employee usage and
-                        seamless customer interaction.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        <div class="console-global-container">
 
-    <section id="education">
-        <div class="sec-head">
-            <div class="sec-left">
-                <span class="sec-num">vi.</span>
-                <h2 class="sec-title">Education &amp; <em>certifications</em></h2>
-            </div>
-            <div class="sec-divider"></div>
-        </div>
-        <div class="edu-grid reveal">
-            <div>
-                <div class="edu-dl">BSc. Computer Science</div>
-                <div class="edu-univ">Sharda University</div>
-                <div class="edu-sub">Greater Noida, Uttar Pradesh, India · 2022–2025</div>
-                <div class="cgpa-row">
-                    <div class="cgpa-big">9.79</div>
-                    <div class="cgpa-denom">/ 10</div>
-                    <div class="cgpa-lbl">CGPA</div>
+            <div class="console-header-block">
+                <div class="console-tag-row">
+                    <span class="console-bit-pulse"></span>
+                    <span class="console-terminal-tag">SYS_CORE :: PROFILE_TELEMETRY_STREAM</span>
+                </div>
+                <h2 class="console-main-title">
+                    Specializing in <span class="matrix-morph-wrap"><span id="morph-text">Embedded
+                            Intelligence</span></span>
+                </h2>
+                <div class="console-bus-loader">
+                    <div class="console-bus-fill" id="deck-progress-bar"></div>
                 </div>
             </div>
-            <div>
-                <div class="cert-list">
-                    <div class="cert-item">
-                        <div>
-                            <div class="cert-name">Basic + Power Electronics</div>
-                            <div class="cert-org">Art of Power Electronics · Kathmandu, Nepal</div>
-                            <div class="cert-blurb">Analog/digital circuits, semiconductor components, circuit design,
-                                prototyping, fabrication, testing, and device repair.</div>
+
+            <div class="console-deck-grid">
+
+                <div class="deck-sidebar-controls">
+                    <div class="hardware-selectors-stack">
+                        <button class="hw-tab-btn active" data-slide="0">
+                            <span class="hw-btn-status"></span>
+                            <div class="hw-btn-meta">
+                                <span class="hw-btn-id">SECTOR_01</span>
+                                <span class="hw-btn-lbl">Core Philosophy</span>
+                            </div>
+                        </button>
+                        <button class="hw-tab-btn" data-slide="1">
+                            <span class="hw-btn-status"></span>
+                            <div class="hw-btn-meta">
+                                <span class="hw-btn-id">SECTOR_02</span>
+                                <span class="hw-btn-lbl">Academic Foundations</span>
+                            </div>
+                        </button>
+                        <button class="hw-tab-btn" data-slide="2">
+                            <span class="hw-btn-status"></span>
+                            <div class="hw-btn-meta">
+                                <span class="hw-btn-id">SECTOR_03</span>
+                                <span class="hw-btn-lbl">Research &amp; Innovation</span>
+                            </div>
+                        </button>
+                        <button class="hw-tab-btn" data-slide="3">
+                            <span class="hw-btn-status"></span>
+                            <div class="hw-btn-meta">
+                                <span class="hw-btn-id">SECTOR_04</span>
+                                <span class="hw-btn-lbl">System Capabilities</span>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="console-automation-widget">
+                        <div class="automation-status-row">
+                            <span class="status-indicator-dot running"></span>
+                            <span id="automation-label">STREAM_CYCLE_ACTIVE</span>
                         </div>
-                        <div class="cert-date">Oct 2025 – Jan 2026</div>
+                        <button id="console-playback-toggle" class="console-action-trigger">PAUSE_BUS</button>
                     </div>
-                    <div class="cert-item">
-                        <div>
-                            <div class="cert-name">Cloud Technologies &amp; Hypervisor Virtualization</div>
-                            <div class="cert-org">Sharda University · UP, India</div>
-                            <div class="cert-blurb">30-hour course covering cloud infrastructure, Microsoft Azure, AWS,
-                                and hands-on virtualized environment management.</div>
+                </div>
+
+                <div class="deck-payload-display">
+                    <div class="console-viewport-shield">
+
+                        <div class="console-data-slide active" data-slide-index="0">
+                            <div class="slide-laser-accent accent-royal"></div>
+                            <span class="slide-security-clearance">ACCESS_GRANTED // BLOCK_01</span>
+                            <h3 class="slide-payload-title">Engineering with Intention</h3>
+                            <p class="slide-payload-lead">
+                                I am an inventive, research-focused Computer Science graduate driven by creating
+                                intelligent systems that bridge real-world operations with modern technology.
+                            </p>
+                            <p class="slide-payload-body">
+                                My focus centers on taking complex, data-driven software architectures and wrapping them
+                                into secure, beautifully optimized solutions designed to address critical industry
+                                needs.
+                            </p>
                         </div>
-                        <div class="cert-date">Aug – Oct 2024</div>
+
+                        <div class="console-data-slide" data-slide-index="1">
+                            <div class="slide-laser-accent accent-emerald"></div>
+                            <span class="slide-security-clearance">ACCESS_GRANTED // BLOCK_02</span>
+                            <h3 class="slide-payload-title">Distinguished Foundations</h3>
+
+                            <div class="gold-medal-telemetry-card">
+                                <div class="medal-vector-glow">🎖️</div>
+                                <div class="medal-meta-payload">
+                                    <strong>Vice-Chancellor's Gold Medalist</strong>
+                                    <p>Graduated Sharda University with a near-perfect CGPA of 9.79 / 10.</p>
+                                </div>
+                            </div>
+
+                            <p class="slide-payload-body">
+                                Expanding my technical capabilities with an MSc in Computer Science at RPTU
+                                Kaiserslautern, specializing in intelligent embedded infrastructure, internet-of-things
+                                ecosystems, and predictive anomaly detection models.
+                            </p>
+                        </div>
+
+                        <div class="console-data-slide" data-slide-index="2">
+                            <div class="slide-laser-accent accent-violet"></div>
+                            <span class="slide-security-clearance">ACCESS_GRANTED // BLOCK_03</span>
+                            <h3 class="slide-payload-title">Research &amp; Patent Pipeline</h3>
+                            <p class="slide-payload-lead">
+                                Exploring creative intersections between abstract mathematical models and hardware
+                                optimization frameworks.
+                            </p>
+                            <p class="slide-payload-body">
+                                Beyond standard engineering, I author intellectual property, including published patents
+                                targeting smart grid energy optimization and automated railway safety architectures. My
+                                theoretical work includes conceptualizing algorithmic frameworks like "Cosmic Hash,"
+                                which maps data hashing parameters to celestial mechanics.
+                            </p>
+                        </div>
+
+                        <div class="console-data-slide" data-slide-index="3">
+                            <div class="slide-laser-accent accent-amber"></div>
+                            <span class="slide-security-clearance">ACCESS_GRANTED // BLOCK_04</span>
+                            <h3 class="slide-payload-title">System Capabilities Matrix</h3>
+
+                            <div class="capabilities-matrix-tags">
+                                <span class="matrix-tag-node">Artificial Intelligence</span>
+                                <span class="matrix-tag-node">IoT Solutions</span>
+                                <span class="matrix-tag-node">Embedded Engineering</span>
+                                <span class="matrix-tag-node">System Security</span>
+                            </div>
+
+                            <div class="console-routing-directory">
+                                <div class="routing-node">
+                                    <span class="r-lbl">COMMS_EMAIL</span>
+                                    <a href="mailto:samienshrestha@gmail.com" class="r-lnk">samienshrestha@gmail.com
+                                        ↗</a>
+                                </div>
+                                <div class="routing-node">
+                                    <span class="r-lbl">HOST_NODE_LOC</span>
+                                    <span class="r-txt">Kaiserslautern, Germany</span>
+                                </div>
+                                <div class="routing-node">
+                                    <span class="r-lbl">REPOSITORY_SRC</span>
+                                    <a href="https://github.com/samien204811" target="_blank"
+                                        class="r-lnk">github.com/samien204811 ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="languages">
-        <div class="sec-head" style="margin-bottom:2.2rem">
-            <div class="sec-left">
-                <span class="sec-num">vii.</span>
-                <h2 class="sec-title">Languages</h2>
-            </div>
-            <div class="sec-divider"></div>
-        </div>
-        <div class="lang-strip reveal">
-            <div class="lang-col">
-                <div class="lang-big">English</div>
-                <div class="lang-lv">C1 · Proficient</div>
-                <div class="lang-note">IELTS Overall 8.0<br>Reading 9 · Listening 9<br>Speaking 7.5 · Writing 7</div>
-                <div class="bar">
-                    <div class="bar-fill" data-w="90"></div>
-                </div>
-            </div>
-            <div class="lang-col">
-                <div class="lang-big">Nepali</div>
-                <div class="lang-lv">Native</div>
-                <div class="lang-note">Full professional proficiency</div>
-                <div class="bar">
-                    <div class="bar-fill" data-w="100"></div>
-                </div>
-            </div>
-            <div class="lang-col">
-                <div class="lang-big">German</div>
-                <div class="lang-lv">A2 – B1</div>
-                <div class="lang-note">Elementary to intermediate working knowledge</div>
-                <div class="bar">
-                    <div class="bar-fill" data-w="32"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="contact-grid">
-
-            <!-- LEFT: HERO STATEMENT -->
-            <div class="contact-big reveal">
-                Let’s design<br>
-                something <em>intelligent</em>.
-            </div>
-
-            <!-- RIGHT: DETAILS -->
-            <div class="reveal">
-
-                <p class="contact-intro">
-                    Open to research collaborations, graduate-level engineering roles, and experimental systems work
-                    across AI, embedded intelligence, and large-scale computing systems. Let’s build something
-                    meaningful.
-                </p>
-
-                <div class="c-links">
-
-                    <a href="mailto:samienshrestha@gmail.com" class="c-link">
-                        <span class="cl-lbl">Direct Contact</span>
-                        <span class="cl-val">Email Collaboration</span>
-                        <span class="cl-arr">→</span>
-                    </a>
-
-                    <a href="https://github.com/samien204811" target="_blank" class="c-link">
-                        <span class="cl-lbl">Engineering</span>
-                        <span class="cl-val">GitHub Repository</span>
-                        <span class="cl-arr">→</span>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/samien-shrestha-4204ab253" target="_blank" class="c-link">
-                        <span class="cl-lbl">Professional Network</span>
-                        <span class="cl-val">LinkedIn Profile</span>
-                        <span class="cl-arr">→</span>
-                    </a>
-
-                </div>
 
             </div>
         </div>
     </section>
 
-    <footer>
-        <span>© 2026 Samien Shrestha</span>
-        <span>Kaiserslautern, Germany</span>
+    <section id="skills" class="kinetic-skills-section">
+        <!-- Spatial Canvas Distortion Field -->
+        <div class="skills-ambient-matrix" id="skills-ambient-matrix"></div>
+        <div class="neon-plasma-orb purple-blur"></div>
+        <div class="neon-plasma-orb blue-blur"></div>
+
+        <div class="skills-kinetic-container">
+            <!-- RESTRUCTURED HIGH-MOTION HEAD -->
+            <div class="sec-head kinetic-reveal">
+                <div class="sec-left">
+                    <span class="sec-num">// 02 .</span>
+                    <h2 class="sec-title">Technical <em class="glitch-text" data-text="skills">skills</em></h2>
+                </div>
+                <div class="sec-divider-stream">
+                    <div class="stream-pulse"></div>
+                </div>
+            </div>
+
+            <!-- MAIN MOTION PLATFORM GRID -->
+            <div class="skills-system-grid">
+
+                <!-- LEFT COLUMN: SYSTEM CATEGORY CONTROL PANELS -->
+                <div class="skills-control-tower">
+                    <p class="tower-sys-log">SELECT_SECTOR_TO_LOAD_MODULES...</p>
+
+                    <div class="sector-button-stack">
+                        <button class="sector-node-btn active" data-sector="programming">
+                            <div class="node-indicator"></div>
+                            <i class="ti ti-terminal-2" aria-hidden="true"></i>
+                            <span class="sector-title" data-scramble="Programming">Programming</span>
+                        </button>
+
+                        <button class="sector-node-btn" data-sector="ai-ml">
+                            <div class="node-indicator"></div>
+                            <i class="ti ti-brain" aria-hidden="true"></i>
+                            <span class="sector-title" data-scramble="AI & ML">AI & ML</span>
+                        </button>
+
+                        <button class="sector-node-btn" data-sector="embedded-iot">
+                            <div class="node-indicator"></div>
+                            <i class="ti ti-cpu" aria-hidden="true"></i>
+                            <span class="sector-title" data-scramble="Embedded & IoT">Embedded & IoT</span>
+                        </button>
+
+                        <button class="sector-node-btn" data-sector="mobile-web">
+                            <div class="node-indicator"></div>
+                            <i class="ti ti-device-mobile" aria-hidden="true"></i>
+                            <span class="sector-title" data-scramble="Mobile & Web">Mobile & Web</span>
+                        </button>
+
+                        <button class="sector-node-btn" data-sector="databases-cloud">
+                            <div class="node-indicator"></div>
+                            <i class="ti ti-database" aria-hidden="true"></i>
+                            <span class="sector-title" data-scramble="Databases & Cloud">Databases & Cloud</span>
+                        </button>
+
+                        <button class="sector-node-btn" data-sector="security-crypto">
+                            <div class="node-indicator"></div>
+                            <i class="ti ti-lock" aria-hidden="true"></i>
+                            <span class="sector-title" data-scramble="Security & Crypto">Security & Crypto</span>
+                        </button>
+                    </div>
+
+                    <!-- REAL-TIME CONSOLE DATA STREAM FEED -->
+                    <div class="telemetry-terminal-widget">
+                        <div class="terminal-header">
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-title">SYS_TELEMETRY_LOG</span>
+                        </div>
+                        <div class="terminal-body" id="terminal-stream-log">
+                            <p class="log-line text-green">&gt; Core matrix operational.</p>
+                            <p class="log-line">&gt; Ready for user data hover queries...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: THE KINETIC INTERACTIVE NODE VIEWPORT -->
+                <div class="skills-stage-tower">
+                    <div class="stage-glass-frame">
+                        <div class="grid-overlay-matrix"></div>
+
+                        <!-- DYNAMIC RESPONSIVE VIEWPORT STACK -->
+                        <div class="skills-node-viewport" id="skills-dynamic-viewport">
+                            <!-- Content completely generated & physically controlled via Javascript Motion Matrix -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="cyber-research-section">
+        <!-- Cybernetic Backdrop Grids -->
+        <div class="research-grid-overlay"></div>
+        <div class="plasma-glow top-right-glow"></div>
+        <div class="plasma-glow bottom-left-glow"></div>
+
+        <div class="research-system-container">
+            <!-- HEADER WITH LASER BEAM SWEEP -->
+            <div class="sec-head research-reveal">
+                <div class="sec-left">
+                    <span class="sec-num">// 03 .</span>
+                    <h2 class="sec-title">Research, Recognitions &amp; <em class="glitch-text"
+                            data-text="Patents">Patents</em></h2>
+                </div>
+                <div class="sec-divider-stream">
+                    <div class="stream-pulse-laser"></div>
+                </div>
+            </div>
+
+            <!-- SPLIT TELEMETRY LAYOUT -->
+            <div class="research-split-deck">
+
+                <!-- LEFT SIDE: INTERACTIVE BLUEPRINT PANEL DECK -->
+                <div class="research-deck-column">
+                    <p class="deck-telemetry-status">SYSTEM_REGISTRY:: READY_FOR_DEEP_INSPECTION...</p>
+
+                    <div class="research-cards-stack">
+                        <!-- CARD 1: GOLD MEDAL -->
+                        <div class="rc-interactive-card" data-project="gold-medal">
+                            <div class="card-border-glow"></div>
+                            <div class="card-corner-brackets"></div>
+                            <div class="card-inner-payload">
+                                <div class="card-meta-line">
+                                    <span class="rc-badge b-gold"><span class="badge-dot"></span> Vice-Chancellor's Gold
+                                        Medal</span>
+                                    <span class="rc-card-year">2025</span>
+                                </div>
+                                <h3 class="rc-card-title">Academic Excellence Award</h3>
+                                <p class="rc-card-desc">Awarded by Sharda University for exceptional academic
+                                    performance across the full bachelor's program — the institution's highest student
+                                    honor.</p>
+                                <div class="card-hardware-spec">
+                                    <span>HONOR_LEVEL: HIGHEST_COMMENDATION</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2: COSMIC HASH -->
+                        <div class="rc-interactive-card" data-project="cosmic-hash">
+                            <div class="card-border-glow"></div>
+                            <div class="card-corner-brackets"></div>
+                            <div class="card-inner-payload">
+                                <div class="card-meta-line">
+                                    <span class="rc-badge b-green"><span class="badge-dot"></span> Published
+                                        Paper</span>
+                                    <span class="rc-card-year">2024–25</span>
+                                </div>
+                                <h3 class="rc-card-title">Cosmic Hash Algorithm</h3>
+                                <p class="rc-card-desc">A conceptual paper proposing a novel data hashing algorithm
+                                    leveraging celestial mechanics and star entropy models for enhanced cryptographic
+                                    strength.</p>
+                                <div class="card-footer-registry">
+                                    <span class="rc-ref"><i class="ti ti-bookmark"></i> IJSDR · ID: IJSDR2504078</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3: SMART GRID -->
+                        <div class="rc-interactive-card" data-project="smart-grid">
+                            <div class="card-border-glow"></div>
+                            <div class="card-corner-brackets"></div>
+                            <div class="card-inner-payload">
+                                <div class="card-meta-line">
+                                    <span class="rc-badge b-blue"><span class="badge-dot"></span> National Patent</span>
+                                    <span class="rc-card-year">2024–25</span>
+                                </div>
+                                <h3 class="rc-card-title">Smart Grid Load Management System</h3>
+                                <p class="rc-card-desc">An energy-efficient IoT-based smart grid with AI-driven
+                                    consumption analytics, enabling real-time load balancing and intelligent energy
+                                    optimization.</p>
+                                <div class="card-footer-registry">
+                                    <span class="rc-ref"><i class="ti ti-certificate"></i> Ref: 202511036740</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4: RAILWAY SAFETY -->
+                        <div class="rc-interactive-card" data-project="railway-safety">
+                            <div class="card-border-glow"></div>
+                            <div class="card-corner-brackets"></div>
+                            <div class="card-inner-payload">
+                                <div class="card-meta-line">
+                                    <span class="rc-badge b-blue"><span class="badge-dot"></span> National Patent</span>
+                                    <span class="rc-card-year">2024–25</span>
+                                </div>
+                                <h3 class="rc-card-title">Railway Track Safety Automation</h3>
+                                <p class="rc-card-desc">A real-time anomaly detection and emergency signaling system
+                                    using embedded systems, designed to prevent track-related accidents through
+                                    continuous automated monitoring.</p>
+                                <div class="card-footer-registry">
+                                    <span class="rc-ref"><i class="ti ti-certificate"></i> Ref: 202511013476</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE: THE GRAPHICAL SCHEMATIC VIEWPORT -->
+                <div class="research-visual-column">
+                    <div class="schematic-glass-viewer">
+                        <div class="viewer-radar-lines"></div>
+                        <div class="viewer-header">
+                            <span class="telemetry-blink"></span>
+                            <span class="viewer-ticker" id="hud-ticker">DIAGNOSTIC_RENDER_IDLE</span>
+                        </div>
+
+                        <!-- DYNAMIC VECTOR CANVAS CAN CONTAIN STRUCTURAL PATHS -->
+                        <div class="svg-vector-viewport">
+                            <svg id="schematic-svg" viewBox="0 0 400 400" width="100%" height="100%">
+                                <!-- Dynamic UI paths inject and animate cleanly here -->
+                            </svg>
+                        </div>
+
+                        <div class="viewer-footer-stats">
+                            <span class="stat-block">X-AXIS // 45.02</span>
+                            <span class="stat-block">Y-AXIS // 99.12</span>
+                            <span class="stat-block" id="vector-count">NODES: 00</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="cyber-projects-section">
+        <div class="projects-matrix-grid"></div>
+        <div class="glow-plasma-field core-cyan"></div>
+        <div class="glow-plasma-field core-magenta"></div>
+
+        <div class="projects-global-container">
+            <div class="sec-head projects-reveal">
+                <div class="sec-left">
+                    <span class="sec-num">// 04 .</span>
+                    <h2 class="sec-title">Selected <em class="serif-italic" data-text="projects">projects</em></h2>
+                </div>
+                <div class="sec-divider-stream">
+                    <div class="stream-pulse-laser-cyan"></div>
+                </div>
+            </div>
+
+            <div class="projects-split-workstation">
+
+                <div class="projects-list-column">
+                    <p class="telemetry-log-header">SYS_REGISTRY:: ARCHIVE_LOG_LOADED [6_UNITS_ACTIVE]</p>
+
+                    <div class="projects-interactive-stack">
+                        <div class="proj-telemetry-row active" data-project-id="wandergo">
+                            <div class="row-loading-laser"></div>
+                            <div class="proj-row-meta">
+                                <span class="proj-row-idx">01</span>
+                                <span class="badge b-award"><span class="badge-dot"></span> Award Winning</span>
+                            </div>
+                            <div class="proj-row-content">
+                                <h3 class="proj-row-name" data-scramble="WanderGo">WanderGo</h3>
+                                <p class="proj-row-summary">Travel map application featuring dark theme architectures
+                                    and progressive place discovery pipelines engineered through active user engagement
+                                    loops.</p>
+                            </div>
+                        </div>
+
+                        <div class="proj-telemetry-row" data-project-id="nisara">
+                            <div class="row-loading-laser"></div>
+                            <div class="proj-row-meta">
+                                <span class="proj-row-idx">02</span>
+                                <span class="badge b-live"><span class="badge-dot"></span> Published</span>
+                            </div>
+                            <div class="proj-row-content">
+                                <h3 class="proj-row-name" data-scramble="Nisara">Nisara</h3>
+                                <p class="proj-row-summary">Smart Healthcare Management System — combining an analytical
+                                    research framework with a fully functional prototype for clinical resource tracking.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="proj-telemetry-row" data-project-id="cortex">
+                            <div class="row-loading-laser"></div>
+                            <div class="proj-row-meta">
+                                <span class="proj-row-idx">03</span>
+                                <span class="badge b-award"><span class="badge-dot"></span> Award Winning</span>
+                            </div>
+                            <div class="proj-row-content">
+                                <h3 class="proj-row-name" data-scramble="Cortex">Cortex</h3>
+                                <p class="proj-row-summary">Livestock Monitoring Collar Ecosystem — an advanced IoT
+                                    health, geolocation tracking, and machine-learned behavioral profiling network for
+                                    agricultural assets.</p>
+                            </div>
+                        </div>
+
+                        <div class="proj-telemetry-row" data-project-id="miners-aid">
+                            <div class="row-loading-laser"></div>
+                            <div class="proj-row-meta">
+                                <span class="proj-row-idx">04</span>
+                                <span class="badge b-live"><span class="badge-dot"></span> Completed</span>
+                            </div>
+                            <div class="proj-row-content">
+                                <h3 class="proj-row-name" data-scramble="Miners Aid">Miners Aid</h3>
+                                <p class="proj-row-summary">Predictive Safety System for Underground Operations —
+                                    ML-driven localized hazard forecasting engine transmitting real-time
+                                    latency-critical worker alerts.</p>
+                            </div>
+                        </div>
+
+                        <div class="proj-telemetry-row" data-project-id="challo">
+                            <div class="row-loading-laser"></div>
+                            <div class="proj-row-meta">
+                                <span class="proj-row-idx">05</span>
+                                <span class="badge b-dev"><span class="badge-dot"></span> In Development</span>
+                            </div>
+                            <div class="proj-row-content">
+                                <h3 class="proj-row-name" data-scramble="Challo">Challo</h3>
+                                <p class="proj-row-summary">On-demand ride booking platform tailored for student and
+                                    employee populations, implementing dynamic real-time graph routing algorithms.</p>
+                            </div>
+                        </div>
+
+                        <div class="proj-telemetry-row" data-project-id="ampces">
+                            <div class="row-loading-laser"></div>
+                            <div class="proj-row-meta">
+                                <span class="proj-row-idx">06</span>
+                                <span class="badge b-rd"><span class="badge-dot"></span> R&amp;D Phase</span>
+                            </div>
+                            <div class="proj-row-content">
+                                <h3 class="proj-row-name" data-scramble="AMPCES V.2">AMPCES V.2</h3>
+                                <p class="proj-row-summary">Automated Machine-learned Endangered Plant Conservation
+                                    Ecosystem — deep learning computer vision arrays built for botanical species
+                                    identification.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-monitor-column">
+                    <div class="monitor-glass-cockpit">
+                        <div class="monitor-crt-scanlines"></div>
+
+                        <div class="monitor-header-telemetry">
+                            <span class="system-status-pulse"></span>
+                            <span class="monitor-filename-ticker" id="project-ticker-id">MODULE::WANDERGO.SYS</span>
+                        </div>
+
+                        <div class="monitor-display-payload">
+                            <div class="data-vis-ring-box">
+                                <svg width="120" height="120" viewBox="0 0 120 120" class="svg-radial-metric">
+                                    <circle cx="60" cy="60" r="50" class="ring-bg" />
+                                    <circle cx="60" cy="60" r="50" class="ring-progress" id="monitor-metric-ring" />
+                                </svg>
+                                <div class="ring-percentage-label" id="monitor-metric-percentage">85%</div>
+                                <span class="ring-sub-txt">SYS_EFFICIENCY</span>
+                            </div>
+
+                            <div class="monitor-spec-sheet">
+                                <div class="spec-node">
+                                    <span class="spec-lbl">CORE TELEMETRY TRACK</span>
+                                    <span class="spec-val" id="monitor-spec-track">UI/UX Exploration Map</span>
+                                </div>
+                                <div class="spec-node">
+                                    <span class="spec-lbl">DEPLOYMENT ARCHITECTURE</span>
+                                    <span class="spec-val" id="monitor-spec-deploy">Frontend Prototype</span>
+                                </div>
+                            </div>
+
+                            <div class="monitor-tech-stack-box">
+                                <span class="tech-stack-lbl">// STACK_MODULES:</span>
+                                <div class="monitor-tech-chips-cloud" id="monitor-tech-cloud">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="monitor-footer-telemetry">
+                            <span class="telemetry-coordinate">LAT_FLOW // 0x4B2</span>
+                            <span class="telemetry-coordinate">BUFFER // stable</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="cyber-exp-section">
+        <div class="exp-global-container">
+
+            <!-- SECTION HEADER -->
+            <div class="sec-head exp-reveal">
+                <div class="sec-left">
+                    <span class="sec-num">// 05 .</span>
+                    <h2 class="sec-title">Work <em class="serif-italic">experience</em></h2>
+                </div>
+                <div class="sec-divider"></div>
+            </div>
+
+            <!-- TIMELINE GRID LAYOUT -->
+            <div class="exp-timeline-wrapper">
+                <div class="exp-log-row">
+
+                    <!-- LEFT TRACK: COMPANY METADATA -->
+                    <div class="exp-meta-column reveal-element">
+                        <span class="exp-type-badge">INTERNSHIP</span>
+                        <h3 class="exp-company-name">Kanpou Nepal Pvt. Ltd.</h3>
+                        <p class="exp-location-tag">Kathmandu, Nepal</p>
+                        <p class="exp-date-duration">May – Aug 2025</p>
+                    </div>
+
+                    <!-- CENTER ELEMENT: MINIMALIST TIMELINE ACCENT -->
+                    <div class="exp-timeline-spine reveal-spine">
+                        <div class="spine-node"></div>
+                        <div class="spine-line"></div>
+                    </div>
+
+                    <!-- RIGHT TRACK: CORE DELIVERABLES -->
+                    <div class="exp-details-column reveal-content">
+                        <h4 class="exp-role-title">Digital Inventory Manager &amp; Web Developer</h4>
+
+                        <ul class="exp-bullet-list">
+                            <li>Designed and deployed a web-based inventory management system tailored to operational
+                                workflows and business requirements.</li>
+                            <li>Automated digital inventory tracking using a custom dashboard, improving product
+                                traceability and reducing manual errors by over <b>40%</b>.</li>
+                            <li>Collaborated with cross-functional teams to integrate real-time stock updates and
+                                client-side order handling.</li>
+                            <li>Implemented robust data structuring and optimized front-end interfaces for efficient
+                                employee operations.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education" class="cyber-edu-section">
+        <!-- SVG Circuit Board Traces Context Background -->
+        <svg class="circuit-trace-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"
+            preserveAspectRatio="none">
+            <path class="trace-path trace-1" d="M 150,100 L 450,100 L 450,220" />
+            <path class="trace-path trace-2" d="M 850,480 L 550,480 L 550,380" />
+            <path class="trace-path trace-3" d="M 150,500 L 350,500 L 350,350" />
+        </svg>
+
+        <div class="edu-global-container">
+            <!-- SECTION HEADER -->
+            <div class="sec-head edu-reveal">
+                <div class="sec-left">
+                    <span class="sec-num">// 06 .</span>
+                    <h2 class="sec-title">Education &amp; <em class="serif-italic">certifications</em></h2>
+                </div>
+                <div class="sec-divider-stream">
+                    <div class="stream-pulse-laser-cyan"></div>
+                </div>
+            </div>
+
+            <p class="edu-terminal-sub">SYS_BUS:: ATTACHED_ACADEMIC_NODES [3_ACTIVE_CORES]</p>
+
+            <!-- HARDWARE ARCHITECTURE BLOCK MAP -->
+            <div class="edu-hardware-grid">
+
+                <!-- CO-PROCESSOR CARD 01: ELECTRONICS -->
+                <div class="hw-component-card co-processor-node" data-node="electronics">
+                    <div class="hw-corner-tag">CO-PROC_01</div>
+                    <div class="hw-status-glow neon-pink"></div>
+                    <div class="hw-card-body">
+                        <span class="cert-date-tag">Oct 2025 – Jan 2026</span>
+                        <h3 class="hw-node-title">Basic + Power Electronics</h3>
+                        <p class="hw-node-vendor">Art of Power Electronics · Kathmandu, Nepal</p>
+                        <p class="hw-node-desc">Analog/digital circuits, semiconductor configurations, micro-circuit
+                            design, prototyping, fabrication, stress testing, and hardware repair operations.</p>
+                    </div>
+                </div>
+
+                <!-- PRIMARY COMPUTE CORE: BSC COMPUTER SCIENCE -->
+                <div class="hw-component-card primary-compute-node active" id="primary-degree-core" data-node="primary">
+                    <div class="hw-corner-tag">PRIMARY_CORE</div>
+                    <div class="hw-status-glow neon-cyan"></div>
+
+                    <div class="hw-card-body">
+                        <h3 class="hw-node-title">BSc. Computer Science</h3>
+                        <p class="hw-node-vendor font-accent">Sharda University</p>
+                        <p class="hw-node-timeline-sub">Greater Noida, Uttar Pradesh, India · 2022–2025</p>
+
+                        <!-- HIGH-ATTRACTION TELEMETRY ROW -->
+                        <div class="oled-telemetry-panel">
+                            <div class="oled-metric-box">
+                                <div class="oled-counter-row">
+                                    <span class="oled-big-number" id="cgpa-counter" data-target="9.79">0.00</span>
+                                    <span class="oled-denominator">/ 10</span>
+                                </div>
+                                <span class="oled-label">SYSTEM_CGPA // CRITICAL_MASS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CO-PROCESSOR CARD 02: VIRTUALIZATION -->
+                <div class="hw-component-card co-processor-node" data-node="cloud">
+                    <div class="hw-corner-tag">CO-PROC_02</div>
+                    <div class="hw-status-glow neon-violet"></div>
+                    <div class="hw-card-body">
+                        <span class="cert-date-tag">Aug – Oct 2024</span>
+                        <h3 class="hw-node-title">Cloud Technologies &amp; Hypervisor Virtualization</h3>
+                        <p class="hw-node-vendor">Sharda University · UP, India</p>
+                        <p class="hw-node-desc">30-hour comprehensive track covering scalable cloud infrastructure
+                            systems, Microsoft Azure deployment nodes, AWS clusters, and bare-metal hypervisor container
+                            environments.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="languages" class="cyber-lang-section">
+        <div class="lang-global-container">
+
+            <div class="sec-head lang-reveal">
+                <div class="sec-left">
+                    <span class="sec-num">// 07 .</span>
+                    <h2 class="sec-title">Languages</h2>
+                </div>
+                <div class="sec-divider"></div>
+            </div>
+
+            <p class="lang-terminal-sub">SYS_COMMS:: AUDIO_CHANNELS_POLL [3_LINKED_UPSTREAMS]</p>
+
+            <div class="lang-channels-grid">
+
+                <div class="lang-signal-card" data-channel="english">
+                    <div class="card-frequency-indicator">CH_01 // 2.4 GHz</div>
+
+                    <div class="lang-card-header">
+                        <div>
+                            <h3 class="channel-main-title">English</h3>
+                            <span class="channel-status-tag">C1 · PROFICIENT</span>
+                        </div>
+                        <div class="audio-equalizer-wave">
+                            <span class="eq-bar eq-1"></span>
+                            <span class="eq-bar eq-2"></span>
+                            <span class="eq-bar eq-3"></span>
+                            <span class="eq-bar eq-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="bandwidth-meter-box">
+                        <div class="bandwidth-rail">
+                            <div class="bandwidth-fill" style="--target-width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="channel-telemetry-drawer">
+                        <div class="drawer-inner-payload">
+                            <div class="ielts-badge-header">
+                                <span class="lbl">EXAM_LOG</span>
+                                <span class="val">IELTS OVERALL: 8.0</span>
+                            </div>
+                            <div class="ielts-sub-matrix">
+                                <div class="matrix-node"><span class="m-lbl">READING</span><span
+                                        class="m-val highlight-cyan">9.0</span></div>
+                                <div class="matrix-node"><span class="m-lbl">LISTENING</span><span
+                                        class="m-val highlight-cyan">9.0</span></div>
+                                <div class="matrix-node"><span class="m-lbl">SPEAKING</span><span
+                                        class="m-val">7.5</span></div>
+                                <div class="matrix-node"><span class="m-lbl">WRITING</span><span
+                                        class="m-val">7.0</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lang-signal-card" data-channel="nepali">
+                    <div class="card-frequency-indicator">CH_02 // 5.8 GHz</div>
+
+                    <div class="lang-card-header">
+                        <div>
+                            <h3 class="channel-main-title">Nepali</h3>
+                            <span class="channel-status-tag native-tag">NATIVE CORE</span>
+                        </div>
+                        <div class="audio-equalizer-wave native-running">
+                            <span class="eq-bar eq-1"></span>
+                            <span class="eq-bar eq-2"></span>
+                            <span class="eq-bar eq-3"></span>
+                            <span class="eq-bar eq-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="bandwidth-meter-box">
+                        <div class="bandwidth-rail">
+                            <div class="bandwidth-fill native-fill" style="--target-width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="channel-telemetry-drawer">
+                        <div class="drawer-inner-payload">
+                            <p class="native-narrative-log">// Native structural linguistics pipeline. Complete
+                                operational and professional field proficiency.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lang-signal-card" data-channel="german">
+                    <div class="card-frequency-indicator">CH_03 // L-BAND</div>
+
+                    <div class="lang-card-header">
+                        <div>
+                            <h3 class="channel-main-title">German</h3>
+                            <span class="channel-status-tag learning-tag">A2 – B1</span>
+                        </div>
+                        <div class="audio-equalizer-wave">
+                            <span class="eq-bar eq-1"></span>
+                            <span class="eq-bar eq-2"></span>
+                            <span class="eq-bar eq-3"></span>
+                            <span class="eq-bar eq-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="bandwidth-meter-box">
+                        <div class="bandwidth-rail">
+                            <div class="bandwidth-fill learning-fill" style="--target-width: 38%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="channel-telemetry-drawer">
+                        <div class="drawer-inner-payload">
+                            <p class="native-narrative-log">// Acquiring conversational and technical data pathways.
+                                Elementary to intermediate working knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="quantum-contact-section">
+        <div class="radar-container-mount">
+            <canvas id="aerospace-radar-canvas"></canvas>
+        </div>
+
+        <div class="contact-plasma-glow"></div>
+
+        <div class="contact-global-container">
+            <div class="contact-grid">
+
+                <div class="contact-big core-reveal">
+                    Let’s design<br>
+                    something <em class="royal-italic-glow">intelligent</em>.
+                    <div class="system-status-ticker">
+                        <span class="pulse-bit"></span>
+                        <span class="ticker-text">GRID_STATUS // EQUALIZED_AIRSTREAM_ACTIVE</span>
+                    </div>
+                </div>
+
+                <div class="contact-details-deck core-reveal">
+                    <p class="contact-intro">
+                        Open to research collaborations, graduate-level engineering roles, and experimental systems
+                        architecture work across machine learning clusters, embedded intelligence, and high-performance
+                        computing systems.
+                    </p>
+
+                    <div class="c-links-magnetic-stack">
+
+                        <a href="mailto:samienshrestha@gmail.com" class="magnetic-link-row" data-magnetic>
+                            <div class="link-laser-line"></div>
+                            <div class="link-meta-block">
+                                <span class="cl-lbl">// DIRECT_COMMUNICATION</span>
+                                <span class="cl-val">Email Collaboration</span>
+                            </div>
+                            <span class="cl-arr">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a href="https://github.com/samien204811" target="_blank" class="magnetic-link-row"
+                            data-magnetic>
+                            <div class="link-laser-line"></div>
+                            <div class="link-meta-block">
+                                <span class="cl-lbl">// SOURCE_CONTROL</span>
+                                <span class="cl-val">GitHub Repository</span>
+                            </div>
+                            <span class="cl-arr">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/samien-shrestha-4204ab253" target="_blank"
+                            class="magnetic-link-row" data-magnetic>
+                            <div class="link-laser-line"></div>
+                            <div class="link-meta-block">
+                                <span class="cl-lbl">// NETWORK_NODE</span>
+                                <span class="cl-val">LinkedIn Profile</span>
+                            </div>
+                            <span class="cl-arr">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="cyber-terminal-footer">
+        <div class="footer-global-container">
+
+            <div class="footer-left-core">
+                <span class="terminal-prompt-symbol">#</span>
+                <span class="footer-identity">SYS_LOG // © 2026 <span class="identity-highlight">Samien
+                        Shrestha</span></span>
+            </div>
+
+            <div class="footer-center-node">
+                <svg class="geo-beacon-icon" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                        fill="currentColor" />
+                </svg>
+                <span class="footer-geo-label">LOC_NODE :: Kaiserslautern, Germany</span>
+            </div>
+
+            <div class="footer-right-telemetry">
+                <div class="live-clock-subsystem">
+                    <span class="clock-label">SYS_TIME:</span>
+                    <span id="footer-live-timestamp" class="clock-digits">00:00:00 UTC</span>
+                </div>
+
+                <div class="connection-status-module">
+                    <span class="status-pulse-dot"></span>
+                    <span class="status-text-slug">LINK_ESTABLISHED</span>
+                </div>
+            </div>
+
+        </div>
     </footer>
 
 
